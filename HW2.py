@@ -18,6 +18,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# The (end - start) shows that the speed of copying all files from one directory to the other
-# without threading and processing is 0.0017461776733398438
