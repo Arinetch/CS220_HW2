@@ -1,7 +1,6 @@
 import shutil
 import os
 from concurrent.futures import ThreadPoolExecutor
-import time
 
 def task(source, destination):
     files = os.listdir(source)
@@ -13,10 +12,7 @@ my_destination = '/Users/mac/Desktop/Desktop/AUA/Fall 2019/Parallel HPC/Python H
 
 def main():
     executor = ThreadPoolExecutor(5)
-    start = time.time()
     executor.submit(task, my_source, my_destination)
-    end = time.time()
-    print(end - start)
 
 if __name__ == '__main__':
     main()
